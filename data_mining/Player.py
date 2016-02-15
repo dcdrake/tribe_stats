@@ -14,5 +14,5 @@ class Player(object):
 		return self.games.pop(index_of_game)
 
 	def __str__(self):
-		rep = self.firstname + '\n' + self.lastname + '\n' + self.number
+		rep = self.firstname + ' ' + self.lastname + ', ' + self.number
 		return rep
