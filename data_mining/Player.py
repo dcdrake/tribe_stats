@@ -9,9 +9,8 @@ class Player(object):
 	def addGame(self, new_game):
 		self.games.append(new_game)
 
-	def getGame(self, game):
-		index_of_game = self.games.index(game)
-		return self.games.pop(index_of_game)
+	def getGame(self, index):
+		return self.games.pop(index)
 
 	def __str__(self):
 		rep = self.firstname + ' ' + self.lastname + ', ' + self.number

@@ -112,4 +112,4 @@ for season in range(13,16):
                                 new_game.minutes_played = game[-19]
 
                     # Add this game to the list of each of the player's games
-                    new_player.addGame(new_game)
+                	new_player.addGame(new_game)
