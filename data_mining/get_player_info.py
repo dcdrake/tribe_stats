@@ -35,9 +35,6 @@ for season in range(13,16):
                                     player_last_name,
                                     player_number)
 
-
-                print new_player
-
                 for game in player_info:
 
                     # Create a new game
@@ -113,8 +110,6 @@ for season in range(13,16):
                                 new_game.fga         = fga
                                 new_game.fg          = fg
                                 new_game.minutes_played = game[-19]
-
-                                print new_game.minutes_played
 
                     # Add this game to the list of each of the player's games
                     new_player.addGame(new_game)
