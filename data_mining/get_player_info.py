@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from lxml import html
 import datetime
 import requests
@@ -52,6 +54,9 @@ for season in range(13,16):
 
                         # Split each game line into a list of individual stats
                         game = game.split()
+
+                        print game
+
 
                         # There are excess lines at the end of the chart (selected season shooting totals), and they should be excluded.
                         # At this point, the 'game' consists of a date and stats, but the last one is a player's stats for the season.
